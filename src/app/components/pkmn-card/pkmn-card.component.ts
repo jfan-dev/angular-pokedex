@@ -8,7 +8,7 @@ import { Component, Input } from '@angular/core';
 export class PkmnCardComponent {
 
 @Input()
-pkmn:string="";
+pkmn:any={};
 
 @Input()
 pkmnNum:number = 0;
