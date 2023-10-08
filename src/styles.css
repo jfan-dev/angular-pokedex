@@ -1,4 +1,4 @@
-@import url(https://db.onlinewebfonts.com/c/073a3b73a63a87e100f6bb8f003fc0d3?family=Flexo-Demi);
+@import url(https://db.onlinewebfonts.com/c/831e1f4da157d96bc996f8c9f5f1e578?family=Pokemon+GB);
 
 * {
     margin: 0;
@@ -6,11 +6,15 @@
     border: 0;
     box-sizing: border-box;
 
-    font-family: "Flexo-Demi",arial,sans-serif;
+    font-family: "Pokemon GB",arial,sans-serif;
     text-decoration: none;
     list-style: none;
 }
 
 .flex {
     display: flex;
+}
+
+.hidden {
+    display: none;
 }

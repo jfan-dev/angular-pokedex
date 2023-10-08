@@ -8,6 +8,9 @@ import { MenuBarComponent } from './components/menu-bar/menu-bar.component';
 import { PkmnCardComponent } from './components/pkmn-card/pkmn-card.component';
 import { MenuBarItemComponent } from './components/menu-bar/menu-bar-item/menu-bar-item.component';
 
+import { HttpClientModule } from '@angular/common/http';
+import { PokemonService } from './services/pokemon.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,9 +21,10 @@ import { MenuBarItemComponent } from './components/menu-bar/menu-bar-item/menu-b
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [PokemonService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

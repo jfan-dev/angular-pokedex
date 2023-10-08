@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-pkmn-card',
@@ -7,4 +7,21 @@ import { Component } from '@angular/core';
 })
 export class PkmnCardComponent {
 
+@Input()
+pkmn:string="";
+
+@Input()
+pkmnNum:number = 0;
+
+getImgPkmn(){
+  return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-vi/x-y/${this.pkmnNum}.png`;
+}
+
+getPkmnNum(str:string | number, size = 4):string {
+  let s = String(str);
+  while (s.length < (size || 3)) {
+    s = '0' +s;
+  }
+  return s;
+}
 }

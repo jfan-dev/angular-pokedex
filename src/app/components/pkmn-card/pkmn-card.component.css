@@ -1,0 +1,61 @@
+
+
+.card__body {
+width: 100%;
+height: 2.5rem;
+padding: 0 0.125rem;
+
+border: 3px double;
+margin: .125rem 0;
+align-items: center;
+
+background-color: bisque;
+
+}
+
+.pkmn-number {
+    font-size: 6px;
+    font-weight: 700;
+}
+
+.pkmn-img {
+    max-width: 25px;
+    max-height: 25px;
+}
+.pkmn-img > img {
+    max-width: 25px;
+    max-height: 25px;
+    margin-left: 3px;
+
+}
+
+.pkmn-name {
+    padding: 0 .5rem;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.pkmn-types {
+    font-size: 8px;
+    width: 100%;
+    height: 100%;
+    flex-flow: column wrap;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+
+.pkmn-type1,
+.pkmn-type2 {
+    padding: 0.06125rem .5rem;
+    border: 1px solid;
+    border-radius: 15px;
+}
+
+.pkmn-type1 {
+    background-color: lightgreen;
+}
+
+.pkmn-type2 {
+    background-color: blueviolet;
+}

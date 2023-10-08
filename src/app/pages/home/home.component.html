@@ -1,1 +1,10 @@
-<p>home works!</p>
+<main class="pokeScreen">
+    <app-pkmn-card
+        *ngFor="let pkmn of pokemonService.pkmns; index as id"
+        [pkmn]= "pkmn"
+        [pkmnNum]="id+1"
+    ></app-pkmn-card> 
+
+</main>
+    <!-- *ngFor="let pkmn of pokemonService.pkmns;" -->
+    <!-- [pkmn]="pokemon" -->
