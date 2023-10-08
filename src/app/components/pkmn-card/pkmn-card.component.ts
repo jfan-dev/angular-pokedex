@@ -8,13 +8,25 @@ import { Component, Input } from '@angular/core';
 export class PkmnCardComponent {
 
 @Input()
-pkmn:any={};
+  pkmn:any={};
 
 @Input()
-pkmnNum:number = 0;
+  pkmnNum:number = 0;
+
+@Input()
+  pkmnID: number = 0;
+
+@Input() 
+  pkmnId: number = 0;
+
+@Input() 
+  pkmnPic:string =''
+
+@Input() 
+  numeroPkmn: number = 0;
 
 getImgPkmn(){
-  return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-vi/x-y/${this.pkmnNum}.png`;
+  return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-vi/x-y/${this.numeroPkmn}.png`;
 }
 
 getPkmnNum(str:string | number, size = 4):string {

@@ -7,3 +7,16 @@
 
     background-color: rgb(185, 252, 229);
 }
+
+.btn__box {
+    justify-content: space-evenly;
+}
+
+.btn__img {
+    padding: 1rem;
+    transition: transform 1s;
+}
+
+.btn__img:active {
+transform: scale(3);   
+}

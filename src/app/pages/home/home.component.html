@@ -3,8 +3,22 @@
         *ngFor="let pkmn of pokemonService.pkmns; index as id"
         [pkmn]= "pkmn"
         [pkmnNum]="id+1"
+        [pkmnID]="id + offset + 1"
+        [numeroPkmn]="id + offset + 1"
     ></app-pkmn-card> 
 
-</main>
-    <!-- *ngFor="let pkmn of pokemonService.pkmns;" -->
-    <!-- [pkmn]="pokemon" -->
+    <div class="btn__box flex">
+        <img 
+            class="btn__img left"
+            (click)="decrementOffset()"
+            src="https://api.iconify.design/streamline/interface-arrows-left-circle-1-arrow-keyboard-circle-button-left.svg?color=black&width=20&height=20'" 
+            alt="" 
+        >
+        <img 
+            class="btn__img right"
+            (click)="incrementOffset()"
+            src="https://api.iconify.design/streamline/interface-arrows-right-circle-1-arrow-keyboard-circle-button-right.svg?color=black&width=20&height=20'" 
+            alt="" 
+        >
+    </div>
+    </main>

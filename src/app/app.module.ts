@@ -11,13 +11,15 @@ import { MenuBarItemComponent } from './components/menu-bar/menu-bar-item/menu-b
 import { HttpClientModule } from '@angular/common/http';
 import { PokemonService } from './services/pokemon.service';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     MenuBarComponent,
     PkmnCardComponent,
-    MenuBarItemComponent
+    MenuBarItemComponent,
+    PkmnCardComponent
   ],
   imports: [
     BrowserModule,
