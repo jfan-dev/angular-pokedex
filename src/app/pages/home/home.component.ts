@@ -49,10 +49,16 @@ export class HomeComponent implements OnInit {
   }
 
   incrementOffset() {
+    if (this.offset <= 704) {
     this.offset += 15;
     this.idPkmn += 15;
     this.loadPokemonData(this.offset, this.limit, this.idPkmn);
-  }
+  } else if (this.offset == 705 ) {
+    this.offset += 1;
+    this.idPkmn += 1;
+    this.loadPokemonData(this.offset, this.limit, this.idPkmn);
+}
+}
 
   decrementOffset() {
     if (this.offset >= 15) {
